@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid slateblue; */
+    color: white;
+}
+
+/* Css for header part: it contains video, navbar and text "Discover your work" */
+.header-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border: 2px solid blue; */
+}
+
+.header-container {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    position: relative;
+    bottom: 90%;
+    width: 100%;
+    /* border: 2px solid; */
+    justify-content: space-evenly;
+}
+
+.logo-text1 {
+    font-size: 2em;
+}
+
+.logo-text2 {
+    font-size: 0.8em;
+}
+
+.navLink {
+    display: flex;
+    font-size: 1.2em;
+    /* border: 1px solid red; */
+}
+
+.nav-item {
+    margin-right: 35px;
+    margin-top: 8px;
+}
+
+.sometext {
+    position: relative;
+    bottom: 65%;
+    left: 25%;
+    max-width: 50%;
+    font-size: 80px;
+}
+
+.navlink-anchor, .navlink-anchor:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.sections-container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    /* border: 10px solid gray; */
+}
+
+.intro {
+    padding: 0 15%;
+    padding-top: 7%;
+    width: 100%;
+    /* border: 5px solid red; */
+    font-size: 2.5em;
+    text-align: center;
+    color: #111111;
+}
+
+.white-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 5% 0;
+    /* border: 10px solid orange; */
+}
+
+.white-section-text {
+    width: 50%;
+    color: black;
+    padding: 10%;
+    /* border: 5px solid black; */
+}
+
+.white-section-text-heading {
+    font-size: 2em;
+    width: 50%;
+    margin-bottom: 10%;
+}
+
+.white-section-text-para {
+    color: #777777;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.white-section-img-container {
+    /* border: 5px solid black; */
+    width: 50%;
+    padding-right: 7%;
+    height: 100%;
+    margin-top: 0;
+}
+
+.white-section-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.middle-img1-container {
+    width: 100vw;
+    /* border: 5px solid red; */
+    padding: 5%;
+    height: 120vh;
+}
+
+.middle-img1 {
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid blue; */
+}
+
+.middle-img2-container {
+    width: 100vw;
+    /* border: 5px solid red; */
+    height: 120vh;
+}
+
+.middle-img2 {
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid blue; */
+}
+
+
+
+.section2-animation-container {
+    margin-bottom: 10%;
+}
+
+.section2-container-heading {
+    font-size: 2.5em;
+    margin: 5% 0 5% 15%;
+}
+
+.slider {
+    height: 75vh;
+    margin: auto;
+    width: 100%;
+    /* border: 10px solid black; */
+    overflow: hidden;
+}
+
+
+/* Setting up the slide track */
+.slide-track {
+    display: flex;
+    height: 100%;
+    /* total width for 12 images */
+    width: calc(450px * 10);
+    /* border: 10px solid blue; */
+    animation: scroll 24s linear infinite;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 7px;
+    position: relative;
+    /* border: 10px solid red; */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid yellow; */
+}
+
+.animation-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-self: flex-end;
+    margin: 10%;
+    /* border: 5px solid brown; */
+    justify-content: space-between;
+    height: 25%;
+}
+
+.animation-heading {
+    font-size: 2em;
+}
+
+.animation-para {
+    font-size: 1.2em;
+    /* color: #777777; */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-450px * 5));
+    }
+}
+
+
+
+.section-container {
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: row;
+    padding: 15% 15% 5% 15%;
+    /* border: 4px solid rebeccapurple; */
+    justify-content: space-between;
+}
+
+.section-item1, .section-item2 {
+    /* border: 4px solid red; */
+    height: 100%;
+    width: 45%;
+}
+
+.section-item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-item1-img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-item-img {
+    width: 100%;
+    height: 90%;
+    /* position: relative; */
+    /* top: 5%; */
+}
+
+.section-item1-text {
+    padding: 5%;
+    /* border: 3px solid blue; */
+    height: 100%;
+}
+
+.section-item1-heading {
+    font-size: 2em;
+    color: black;
+    line-height: 1;
+    padding-bottom: 8%;
+}
+
+.section-item1-desc {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #777777;
+}
+
+
+
+.our_world-section {
+    /* border: 10px solid gray; */
+    height: 70vh;
+    width: 100vw;
+    background-image: url('../assets/images/about_images/What_we_do_footer_2_5dabbd1a34149dcaed83515ff1526a0f.jpg');
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.our-world-txt {
+    font-size: 2.5em;
+}
+
+.our-world-btn {
+    background-color: transparent;
+    color: white;
+    width: 10%;
+    margin-top: 3%;
+    height: 10%;
+    border: 1px solid white;
+}
+
+.our-world-btn:hover {
+    border: 2px solid white;
+}
+
+
+
+/* Css for footer part */
+.footer-container {
+    background-color: #161F1E;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100vw;
+    height: 70vh;
+    justify-content: space-around;
+    /* padding-top: 8%; */
+}
+
+.footer-item-one {
+    display: flex;
+    /* width: 100vw; */
+    /* height: 60vh; */
+    justify-content: space-around;
+    padding-top: 8%;
+    /* border: 1px red solid; */
+}
+
+.footer-items {
+    display: flex;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid white; */
+    width: 60%;
+}
+
+.links {
+    margin-bottom: 50px;
+}
+
+.contact-info, .link, .page {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    opacity: 0.5;
+    width: 50%;
+    position: relative;
+    left: 9%;
+    bottom: 10%;
+}
+
+
