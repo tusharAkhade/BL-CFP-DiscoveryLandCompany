@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid slateblue; */
+}
+
+/* Css for header part: it contains video, navbar and text "Discover your work" */
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border: 2px solid blue; */
+}
+
+.header-container {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    position: relative;
+    bottom: 90%;
+    width: 100%;
+    /* border: 2px solid; */
+    justify-content: space-evenly;
+}
+
+.logo-text1 {
+    font-size: 2em;
+}
+
+.logo-text2 {
+    font-size: 0.8em;
+}
+
+.navLink {
+    display: flex;
+    font-size: 1.2em;
+    /* border: 1px solid red; */
+}
+
+.nav-item {
+    margin-right: 35px;
+    margin-top: 8px;
+}
+
+.sometext {
+    position: relative;
+    bottom: 65%;
+    left: 25%;
+    max-width: 25%;
+    font-size: 80px;
+}
+
+.navlink-anchor, .navlink-anchor:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.section-container {
+    width: 100vw;
+    height: 140vh;
+    display: flex;
+    flex-direction: row;
+    padding: 15% 15% 0 15%;
+    background-image: url(../assets/images/home_images/background_imagev2.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    /* border: 4px solid rebeccapurple; */
+    justify-content: space-between;
+}
+
+.section-item1, .section-item2 {
+    /* border: 4px solid red; */
+    height: 100%;
+    width: 45%;
+}
+
+.section-item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-item1-img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-item-img {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 5%;
+}
+
+.section-item1-text {
+    padding: 10%;
+    /* border: 3px solid blue; */
+    height: 100%;
+}
+
+.section-item1-heading {
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.section-item1-desc {
+    color: #777777;
+}
+
+
+/* css for animation part  */
+.section2-animation-container {
+    margin-bottom: 10%;
+}
+
+.section2-container-heading {
+    font-size: 2.5em;
+    margin: 5% 0 5% 15%;
+    /* margin-bottom: 5%; */
+}
+
+.slider {
+    height: 75vh;
+    margin: auto;
+    width: 100%;
+    /* border: 10px solid black; */
+    overflow: hidden;
+}
+
+
+/* Setting up the slide track */
+.slide-track {
+    display: flex;
+    height: 100%;
+    /* total width for 12 images */
+    width: calc(450px * 50);
+    /* border: 10px solid blue; */
+    animation: scroll 120s linear infinite;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 7px;
+    /* border: 10px solid red; */
+}
+
+.animation-img {
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid yellow; */
+}
+
+.animation-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-self: flex-end;
+    margin: 8%;
+    /* border: 5px solid brown; */
+    justify-content: space-between;
+    height: 15%;
+}
+
+.animation-heading {
+    font-size: 1.5em;
+}
+
+.animation-para {
+    font-size: 1.3em;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-450px * 25));
+    }
+}
+
+
+
+/* Css for black box */
+.outer-section-of-blackBox {
+    height: 150vh;
+    width: 100vw;
+    padding: 10% 0;
+    padding-bottom: 0%;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 3px solid red; */
+}
+
+.outer-section-of-blackBox-info {
+    display: flex;
+    padding-left: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+}
+
+.section-of-blackBox {
+    /* border: 5px solid brown; */
+    background-image: url('../assets/images/home_images/home_blackBox/globe-usa.jpg');
+    padding-bottom: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.outer-section-of-blackBox-heading {
+    font-size: 2em;
+}
+
+.outer-section-of-blackBox-para {
+    color: #777777;
+}
+
+.blackbox-links {
+    display: flex;
+}
+
+.blackbox-link {
+    padding-right: 4%;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.blackbox-container {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    position: relative;
+    left: 50%;
+    background-color: #161f1e;
+    /* border: 5px solid red; */
+    color: white;
+}
+
+.carousel-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    /* border: 4px solid red; */
+    padding: 7%;
+    padding-right: 20%;
+    font-size: 3em;
+}
+
+.carousel-img {
+    width: 40%;
+    height: 100%;
+    /* border: 4px solid green; */
+    position: relative;
+    bottom: 15%;
+    right: 7%;
+}
+
+#carouselExampleControls, .carousel-inner, .carousel-item, #single-img{
+    height: 100%;
+}
+
+.carousel-buttons {
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+}
+
+.carousel-weather, .carousel-place, .carousel-location {
+    /* border: 4px solid red; */
+    font-size: 0.4em;
+    /* display: flex; */
+    color: #f3f3f3;
+}
+
+.carousel-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carousel-place {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-place .text2 {
+    font-size: 2em;
+}
+
+
+
+/* Css for images above the footer  */
+.img-section-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    /* border: 2px solid red; */ 
+}
+
+.img-item {
+    /* border: 1px solid blue; */
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-experience {
+    background-image: url(../assets/images/home_images/Expereinces_slider_190716_095517_e36797c82dbcb9dea0800f713424f022.jpg);
+    background-size: cover;
+    /* width: 33.33%; */
+}
+
+#img-lifestyle {
+    background-image: url(../assets/images/home_images/lifestyle_slider_190716_095537_fc98236fcd7afd38ca0fd181cf61bcb6.jpg);
+    background-size: cover;
+}
+
+#img-wellness {
+    background-image: url(../assets/images/home_images/wellness_slider_190716_095551_90f8ce634cc6ad7a15d605007f03ee5c.jpg);
+    background-size: cover;
+}
+
+.img-txt {
+    font-size: 3em;
+}
+
+.img-btn-container {
+    height: 55px;
+    width: 55px;
+    border: 3px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.img-btn, .img-btn:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    /* border: 3px solid red; */
+}
+
+
+
+/* Css for footer part */
+.footer-container {
+    background-color: #161F1E;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100vw;
+    height: 70vh;
+    justify-content: space-around;
+    /* padding-top: 8%; */
+}
+
+.footer-item-one {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8%;
+    /* border: 1px red solid; */
+
+}
+
+.footer-items {
+    display: flex;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid white; */
+    width: 60%;
+}
+
+.links {
+    margin-bottom: 50px;
+}
+
+.contact-info, .link, .page {
+    margin-bottom: 10px;
+}
+
+.copyright {
+    opacity: 0.5;
+    width: 50%;
+    position: relative;
+    left: 9%;
+    bottom: 10%;
+}
