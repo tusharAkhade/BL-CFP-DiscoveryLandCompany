@@ -58,8 +58,17 @@ video {
     font-size: 80px;
 }
 
-.navlink-anchor, .navlink-anchor:hover {
+.navlink-anchor {
     color: white;
+    text-decoration: none;
+}
+
+.navlink-anchor:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo-navlink:hover{
     text-decoration: none;
 }
 
@@ -105,7 +114,7 @@ video {
 
 .white-section-text-para {
     color: #777777;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     line-height: 1.5;
     text-align: left;
 }
@@ -189,7 +198,7 @@ video {
 
 .section-img-para {
     color: #777777;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     line-height: 1.5;
     text-align: left;
 }
@@ -334,10 +343,10 @@ video {
 
 
 
-@media screen and (min-width: 600px) and (max-width: 1100px) {
+@media screen and (min-width: 700px) and (max-width: 1100px) {
     .header-container {
         width: 100vw;
-        height: 100vh;
+        height: 110vh;
     }
 
     .navLink {
@@ -363,7 +372,7 @@ video {
 
     .intro {
         font-size: 1.8em;
-        border: 4px solid red;
+        /* border: 4px solid red; */
     }
 
     .white-section {
@@ -387,7 +396,7 @@ video {
     
     .section, .mid-section {
         width: 100%;
-        height: 70vh;
+        height: 100vh;
         flex-direction: column;
         /* border: 5px solid black; */
         padding: 10%;
@@ -438,7 +447,7 @@ video {
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 600px) {
+@media screen and (min-width: 375px) and (max-width: 700px) {
     .header-container {
         width: 100vw;
         height: 100vh;
@@ -466,7 +475,8 @@ video {
     }
 
     .intro {
-        font-size: 1.8em;
+        font-size: 1.5em;
+        text-align: justify;
         /* border: 4px solid red; */
     }
 
@@ -475,10 +485,12 @@ video {
         height: 100%;
         /* border: 4px solid blue; */
         padding: 15%;
+        margin-bottom: 0%;
     }
 
     .white-section-img-container {
         /* border: 15px solid black; */
+        height: 110vh;
         width: 100%;
         margin: 0;
     }
@@ -487,12 +499,14 @@ video {
         width: 100%;
         /* border: 5px solid black; */
     }
-    
+
+    .white-section-text-para {
+        font-size: 1em;
+    }
     
     .section, .mid-section {
         width: 100%;
-        height: 70vh;
-        /* position: relative; */
+        height: 100vh;
         flex-direction: column;
         /* border: 5px solid black; */
         padding: 10%;
@@ -530,6 +544,10 @@ video {
         bottom: 55%;
     }
 
+    .section-img-para {
+        font-size: 0.9em;
+    }
+
     .our_world-section {
         height: 35vh;
     }
@@ -540,7 +558,7 @@ video {
     }
 
     .footer-container {
-        height: 50vh;
+        height: 90vh;
         font-size: 0.8em;
         padding-left: 10%;
     }
@@ -604,7 +622,7 @@ video {
     }
 
     .intro {
-        font-size: 1.8em;
+        font-size: 1.5em;
         /* border: 4px solid red; */
     }
 
@@ -612,7 +630,7 @@ video {
         flex-direction: column-reverse;
         height: 100%;
         /* border: 4px solid blue; */
-        padding: 15%;
+        padding: 5%;
     }
 
     .white-section-img-container {
@@ -623,16 +641,26 @@ video {
 
     .white-section-text {
         width: 100%;
+        padding: 0;
+        padding-top: 10%;
         /* border: 5px solid black; */
     }
+
+    .white-section-text-para {
+        font-size: 1em;
+    }
     
+    .white-section-text-heading {
+        font-size: 1.5em;
+        width: 100%;
+    }
     
     .section, .mid-section {
         width: 100%;
-        height: 70vh;
+        height: 90vh;
         flex-direction: column;
         /* border: 5px solid black; */
-        padding: 10%;
+        padding: 5%;
         padding-bottom: 0%;
     }
 
@@ -642,7 +670,7 @@ video {
     
     .section-figure, .mid-section-figure {
         width: 100%;
-        height: 55%;
+        height: 50%;
         /* border: 5px solid blue; */
     }
 
@@ -667,6 +695,18 @@ video {
         bottom: 55%;
     }
 
+    .mid-section-img-info {
+        justify-content: space-between;
+    }
+
+    .section-img-heading {
+        font-size: 1.7em;
+    }
+
+    .section-img-para {
+        font-size: 0.9em;
+    }
+
     .our_world-section {
         height: 35vh;
     }
@@ -677,7 +717,7 @@ video {
     }
 
     .footer-container {
-        height: 50vh;
+        height: 90vh;
         font-size: 0.8em;
         padding-left: 10%;
     }
