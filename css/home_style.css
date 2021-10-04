@@ -54,12 +54,22 @@ video {
     position: relative;
     bottom: 65%;
     left: 25%;
+    line-height: 1;
     max-width: 25%;
     font-size: 80px;
 }
 
-.navlink-anchor, .navlink-anchor:hover {
+.navlink-anchor {
     color: white;
+    text-decoration: none;
+}
+
+.navlink-anchor:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo-navlink:hover{
     text-decoration: none;
 }
 
@@ -143,7 +153,7 @@ video {
 .slide-track {
     display: flex;
     height: 100%;
-    /* total width for 12 images */
+    /* total width for 50 images */
     width: calc(450px * 50);
     /* border: 10px solid blue; */
     animation: scroll 120s linear infinite;
