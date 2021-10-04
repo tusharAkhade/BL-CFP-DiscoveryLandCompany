@@ -59,8 +59,17 @@ body {
     font-size: 80px;
 }
 
-.navlink-anchor, .navlink-anchor:hover {
+.navlink-anchor {
     color: white;
+    text-decoration: none;
+}
+
+.navlink-anchor:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.logo-navlink:hover{
     text-decoration: none;
 }
 
